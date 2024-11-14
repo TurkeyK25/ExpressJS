@@ -1,0 +1,9 @@
+const moongoose = require('moongoose');
+
+const UserSchma = moongoose.Schema({
+    ten: {
+        type: String,
+        require: true
+    }
+});
+const UserModel = moongoose.model('user', UserSchma);
